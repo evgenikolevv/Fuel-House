@@ -1,0 +1,477 @@
+@media screen and (max-width:1053px){
+
+
+    /*Navigation burger */
+    #burger-container{
+        display: block;
+        position: relative;
+    }
+
+   
+
+    #main-nav{
+        display: none; 
+       background: rgba(255,255,255,0.9);
+        height:80px;
+        width:100%;
+        padding:0;
+        left:0;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+        
+    }
+    #main-nav li:first-child{
+       display: none;
+    }
+    
+    #main-nav li a{
+       color:#222;
+        
+    }
+    
+   #main-nav li a:hover{
+    color:#000;
+   }
+   
+
+
+    /*Landing Page */
+    .header{
+        background:url('./images-tab/Landing.png') no-repeat;
+        height:550px;
+        width:100%;
+        background-size:cover;
+    }
+
+    .wrapper{
+        width:100%;
+        max-width:788px;
+        margin: 0 auto;
+    }
+
+
+    .header h1{
+        clear: both;
+        font-size:63px; 
+        transform: translateY(0%); 
+        
+    }
+
+    .header p{
+        font-size: 20px;
+        transform: translateY(90%); 
+    }
+
+
+    .arrow-landing{
+        transform: translateY(120%); 
+    }
+    /* Section About */
+
+    .about{
+        background:url(./images-tab/about.png)no-repeat;
+        background-size: cover;
+        height:1531px;
+        width:100vw;
+    }
+    .cards{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        transform:translateY(15%);
+        justify-items: center;
+        
+       
+    }
+
+    /* About Store */
+
+    .about-store{
+        height:3000px;
+    }
+    .about-store h1{
+        font-size: 45px;
+    }
+
+    .aboutpic-1{
+        background:url("./images-tab/about-pic1.png") no-repeat;
+        height:488px;
+        width:100%;
+        max-width:609px;
+        display: block;
+        padding:0;
+        margin:0;
+    }
+
+    .aboutpic-2{
+        background:url("./images-tab/about-pic2.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:609px;
+        height:488px;
+        min-width:300px;
+        height:478px;
+        margin:0;
+        
+    }
+    .aboutpic-3{
+        background:url("./images-tab/about-pic3.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:609px;
+        height:488px;
+        min-width:300px;
+        height:478px;
+        margin:0;
+        
+    }
+
+ 
+    .contain-store{
+        width:609px;
+        height:800px;
+        display:block;
+        transition: opacity 0.8s ease-in;
+        opacity:0;
+        margin-bottom:50px;
+    }
+    .contain-store:last-child{
+        width:609px;
+        height:800px;
+        display:block;
+        transition: opacity 0.8s ease-in;
+        opacity:0;
+        
+       
+    }
+    .contain-store p{
+        display: block;
+        width:90%;
+        margin: 50px auto 50px auto;
+        text-align: center;
+    }
+  
+
+}
+
+/* small tab */
+@media screen and (max-width:735px){
+
+    .about-store h1{
+       font-size:40px;
+    }
+}
+
+@media screen and (max-width:644px){
+    
+ 
+    .about-store{
+        height:3150px;
+    }
+    .card-style{
+        margin:70px auto 50px auto;
+    }
+    .card-style img{
+        height:70px;
+        width:70px;
+    }
+
+    .card-style h3{
+        font-size:28px;
+    }
+    .card-style p {
+        margin-bottom:12px;
+    }
+    .store, .coffee{
+        width:460px;
+        height:400px;
+    }
+    .about-store h1{
+       font-size:36px;
+       transform: translateY(200%); 
+    }
+
+    .contain-store{
+        width:509px;
+        height:850px;
+    }
+    .contain-store:last-child{
+        width:509px;
+        height:850px;
+    }
+
+    .contain-store p{
+        word-break: break-all;
+    }
+
+    .aboutpic-1{
+        background:url("./images-small-tab/aboutpic-1.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:509px;
+        height:458px;
+    }
+
+    .aboutpic-2{
+        background:url("./images-small-tab/aboutpic-2.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:509px;
+        height:458px;
+    }
+
+    .aboutpic-3{
+        background:url("./images-small-tab/aboutpic-3.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:509px;
+        height:458px;
+    }
+}
+/***** small tabs *******/
+
+@media screen and (max-width:580px){
+    
+    #burger-container{
+        right:28px;
+        top:30px;
+    }
+
+    .about{
+        height:1200px;
+    }
+
+    .about h1{
+        font-size:45px;
+        transform:translateY(130%);
+    }
+    .about-store h1{
+        font-size:30px;
+    }
+
+    .butt-coffee{
+        font-size:36px;
+    }
+}
+/*****************************FIX FIX FIX FIX FIX FIX FIX FIX PLS PLS SNIMKITE ***************/
+@media screen and (max-width:500px){
+
+   
+
+    #landing-text{
+        transform: translateY(120%);
+    }
+    .arrow-landing{
+        display: none;
+    }
+    
+    .card-style{
+        margin:80px auto 80px auto;
+    }
+    .card-style img{
+        height:70px;
+        width:70px;
+        margin-bottom:5px;
+    }
+
+    .card-style h3{
+        font-size:24px;
+        margin-bottom:10px;
+    }
+    .card-style p {
+        margin-bottom:12px;
+        display: none;
+    }
+    .card-style button{
+        height:45px;
+        width:200px;
+        font-size:20px;
+    }
+
+    .store, .coffee{
+        width:380px;
+        height:320px;
+    }
+    .coffee h3{
+        margin-bottom:35px;
+    }
+    .about-store{
+        height:3250px;
+    }
+
+    .about-store h1{
+        font-size:24px;
+        transform: translateY(330%);
+    }
+    .contain-store{
+        width:auto;
+        height:auto;
+        display:block;
+        transition: opacity 0.8s ease-in;
+        opacity:0;
+        margin-bottom:50px;
+    }
+
+    .contain-store:last-child{
+        width:auto;
+        height:auto;
+        display:block;
+        transition: opacity 0.8s ease-in;
+        opacity:0;
+        margin-bottom:50px;
+        
+        
+    }
+    .contain-store p {
+        padding-bottom:50px;
+        word-break: break-all;
+    }
+    .aboutpic-1{
+        background:url("./images-phone/aboutpic-1.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:100%;
+        height:424px;
+    }
+
+
+    .aboutpic-2{
+        background:url("./images-phone/aboutpic-2.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:100%;
+        height:424px;
+    }
+
+    .aboutpic-3{
+        background:url("./images-phone/aboutpic-3.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:100%;
+        height:424px;
+    }
+
+    .contain-coffee img {
+        height:275px;
+        max-height:100%;
+        width:100%;
+        max-width:100%;
+        margin:100px 0 30px 0;
+        
+    }
+
+
+}
+/****************    Phones       ***************/
+@media screen and (max-width:387px){
+
+    .logo{
+        left:-25px;
+    }
+
+    #burger-container{
+        right:20px;
+    }
+    
+    .store, .coffee{
+        width:350px;
+        height:280px;
+    }
+   
+
+   .card-style{
+       margin:50px auto 50px auto;
+   }
+
+    .about-store h1{
+        font-size:22px;
+    }
+
+   
+    .contain-store p {
+        width:80%;
+        word-break: break-all;
+        
+    }
+
+    .contain-store:last-child p{
+        width:80%;
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width:375px){
+    
+    .card-style{
+        margin:50px auto 50px auto;
+    }
+    .card-style img{
+        height:70px;
+        width:70px;
+        margin-bottom:15px;
+    }
+    .card-style p{
+        display: none;
+    }
+
+    .card-style button{
+        width:200px;
+    }
+
+    .store,.coffee{
+        height:280px;
+        width:300px;
+    }
+
+    .coffee h3{
+        margin-bottom:35px;
+    }
+    
+    
+    .containt-store:last-child{
+        padding-bottom:500px;
+    }
+
+    .contain-store{
+        width:100%;
+    }
+
+    .contain-store:last-child{
+        width:100%;
+
+    }
+    .contain-store p {
+        margin: 50px auto 50px auto;
+        word-break: break-all;
+    }
+ 
+}
+
+@media screen and (max-width:370px){
+    
+  
+    
+    .header h1{
+        transform: translateY(-70%);
+        font-size:35px;
+    }
+    
+    .about-store{
+        height:3550px ;
+    }
+    
+    .about-store h1{
+        font-size:18px;
+        transform: translateY(420%);
+    }
+
+
+    .contain-store:last-child{
+        margin-bottom:500px;
+    }
+
+  
+
+}

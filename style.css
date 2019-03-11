@@ -1,0 +1,499 @@
+html{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Droid Sans';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.wrapper{
+    width:100%;
+    max-width:1364px;
+    margin: 0 auto;
+}
+
+/****************** Navigation burger*****************/
+
+#burger-container{
+    position:relative;
+    width:25px;
+    z-index:2000;
+    display:block;
+    float: right;
+    top:30px;
+    right:48px;
+    display: none;
+}
+
+#burger{
+    cursor:pointer;
+}
+
+
+#burger span{
+    height:4px;
+    background:#eee;
+    display:block;
+    width:29px;
+    margin-bottom:4px;
+    position:relative;
+    top:0;
+    right:0;
+    transition:all ease-in-out 0.3s;
+    border-radius: 7px;
+}
+
+
+
+
+
+#burger-container.open span:nth-child(2){
+    width:0px;
+    opacity:0;
+  
+}
+
+
+#burger-container.open span:nth-child(1){
+    transform: rotate(45deg);
+    top:8px;
+}
+#burger-container.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top:-8px;
+    
+}
+
+ /************* LANDING PAGE ****************/
+ 
+
+
+.header{
+    background: url("./images-desktop/Group\ 124.png") no-repeat ;
+    height:100vh;
+    width:100%;
+    background-size:cover;
+}
+
+#main-nav{
+    display:flex; 
+    
+}
+
+
+#main-nav li {
+    list-style: none;
+    margin-top:0;
+
+}
+.logo{
+    top:10px;
+    position: relative;
+    float: left;
+    z-index: 999;
+}
+#main-nav li:first-child{
+    margin-right:auto;
+    padding:0;
+    margin-top:-7px;
+    
+}
+
+#main-nav li:last-child a{
+    padding-right:20px;
+}
+
+#main-nav li a{
+    color:#EDF5E1;
+    display:block;
+    padding:30px 40px 0px 0;
+    text-decoration: none;
+    cursor:pointer;
+    font-size:18px;
+    float:right;
+ 
+}
+
+#main-nav li a:hover{
+    color:#999;
+}
+
+
+.header h1{
+    clear:both;
+    color:#EDF5E1;
+    font-size:63px;
+    font-family: 'Droid Sans';
+    text-align: center;  
+    transform: translateY(120%); 
+}
+
+.header p{
+    color:#EDF5E1;
+    font-size: 31px;
+    transform: translateY(350%);
+    text-align: center;
+}
+
+.arrow-landing{
+    display: block;
+    text-align: center;
+    position:relative;
+    transform: translateY(250%);
+    margin-bottom:5%;
+    cursor: pointer;
+}
+
+
+
+
+#landing-text{
+    transform: translateY(50%);
+    top:50%;
+    position: relative;
+}
+
+
+
+/******************* ABOUT ********************/
+
+.about{
+    background: url("./images-desktop/about-background.png") no-repeat;
+    background-size: cover;
+    height:1173px;
+    width:100vw;
+}
+
+.about h1{
+    font-size:63px;
+    text-align: center;
+    transform: translateY(80%);
+    color:#7B6D5D;
+    font-weight: 600;
+}
+
+.cards{
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns:1fr 1fr; 
+    -ms-grid-gap:10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    /*grid-auto-rows: 500px;*/
+    transform:translateY(30%);
+    justify-items: center;
+ 
+    
+   
+}
+
+
+.card-style{
+    display: block;
+    text-align: center;
+    margin: 90px auto 90px auto;
+    width:70%;
+    color:#EDF5E1;
+    
+}
+
+.card-style img{
+    margin-bottom:16px;
+}
+
+.card-style h3{
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+
+.card-style p{
+    font-size:16px;
+    margin-bottom:33px;
+}
+
+.card-style button{
+    outline: none;
+    height:55px;
+    width:230px;
+    border:none;
+    background:#EDF5E1;
+    font-size:24px;
+    border-radius:28px;
+    cursor: pointer;
+}
+.store{
+    background: #41B3A3;
+    width:513px;
+    height:460px;
+    -ms-grid-column: 1;
+    margin-bottom:100px;
+}
+
+.store button{
+    color:#41B3A3;
+    margin-top:20px;
+}
+
+.store button:hover{
+    background:#379683;
+    color:#EDF5E1;
+}
+
+.coffee button{
+    color:#7B6D5D;
+    
+}
+
+.coffee button:hover{
+    background:#AE9D8A;
+    color:#EDF5E1;
+}
+
+.coffee{
+    background:#7B6D5D;
+    width:513px;
+    height:460px;
+    -ms-grid-column: 2;
+}
+
+/******************* ABOUT STORE ********************/
+
+
+.about-store{
+    background: #EDF5E1;
+    height:2050px;
+}
+
+.about-store h1{
+    font-size: 50px;
+    color:#7B6D5D;
+    text-align: center;
+    transform: translateY(150%);
+    margin-bottom: 200px;
+    font-weight: 500;
+}
+
+.contain-store{
+    width:85%;
+    background:#FFF;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    box-shadow: 0px 0px 6px 0.3px rgba(0,0,0,0.3);
+    margin: 110px auto 110px auto;
+    align-items: center;
+    transition: opacity 0.8s ease-in;
+    opacity:0;
+}
+
+.contain-store:last-child{
+    width:85%;
+    background:#FFF;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    box-shadow: 0px 0px 6px 0.3px rgba(0,0,0,0.3);
+    margin: 110px auto 110px auto;
+    align-items: center;
+    
+}
+/* Hidden */
+.aboutpic-1{
+    background:url("./images-desktop/about-1.png") no-repeat;
+    background-size: cover;
+    width:536px;
+    min-width:300px;
+    height:478px;
+    margin-right:35px;
+    justify-self: start;
+    
+}
+
+
+
+.aboutpic-2{
+    background:url("./images-desktop/about-2.png")no-repeat;
+    background-size: cover;
+    width:536px;
+    min-width:300px;
+    height:478px;
+    margin-left:35px;
+    justify-self: end;
+    grid-column-start:2;
+    grid-column-end:2; 
+}
+
+.aboutpic-3{
+    background:url("./images-desktop/about-3.png") no-repeat;
+    background-size: cover;
+    width:536px;
+    min-width:300px;
+    height:478px;
+    margin-right:35px;
+    justify-self: start;
+}
+
+
+
+.contain-store p {
+    display: block;
+    width:90%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#7B6D5D;
+    justify-self: center;
+   
+}
+
+.contain-pic2 p{
+    grid-row-start:1; 
+    grid-row-end:1;
+}
+
+
+/****************** ABOUT COFFEE *****************/
+
+.about-coffee{
+    background: #41B3A3;
+   
+}
+
+
+
+.contain-coffee{
+    display: grid;
+    display: -ms-grid;
+    justify-items: center;
+    text-align: center;
+}
+
+
+/* slider dots style */
+
+.dot-container{
+    margin-top:25px;
+    padding-bottom: 70px;
+}
+.dot-container li {
+    display: inline;
+    margin: 0 5px;
+}
+.dot {
+    position: relative;
+    display:block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #EDF5E1;
+    border-radius: 50%;
+    display: inline-block;
+    opacity:0.8;
+    
+  }
+  
+  .dot:hover{
+      opacity: 1;
+      transition-duration: 0.3s;
+  }
+  
+
+    .dot-active{
+        transform:scale(1.5,1.5);
+     transition-duration: 0.3s;
+     opacity:1;
+    }
+
+
+.butt-coffee{
+    height:68px;
+    width:260px;
+    border-radius:4px;
+    outline:none;
+    border:none;
+    background:none;
+    font-size:45px;
+    color:#EDF5E1;
+    transform:  translateY(80%);
+    display: block;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+/* slider pictures */
+
+.mySlides{
+    display:none;
+}
+.contain-coffee img {
+    height:400px;
+    width:500px;
+    margin:100px 0 30px 0;
+    
+}
+/**** Animations *******/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+ 
+/*************** FOOTER *********************/
+
+.footer{
+    background:#379683;
+    display: grid;
+    text-align: center;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer ul li{
+    margin:25px 0;
+}
+.footer ul li a{
+    color:#EDF5E1;
+    text-decoration: none;
+}
+
+.footer img{
+    display: inline-block;
+    text-align: center;
+   justify-self: center;
+   height:40px;
+   width:40px;
+}
+
+
+/* show about-store  */
+.active{
+    transition: opacity 1.6s ease-in;
+    opacity:1 !important; 
+}
+
+
+
+

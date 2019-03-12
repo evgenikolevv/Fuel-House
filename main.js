@@ -35,6 +35,8 @@ var burgerSpan = document.querySelectorAll('.bg-span');
 
 
 
+
+
 //smooth scroll NAV BAR
 
 function smoothScroll(target, duration){
@@ -72,19 +74,61 @@ function smoothScroll(target, duration){
 }
 //attaching scroll animations 
 
-var navAbout = document.querySelector('.nav-about');
-var navMenu = document.querySelector('.nav-menu');
+const navAbout = document.querySelector('.nav-about');
+const navMenu = document.querySelector('.nav-menu');
+const navContact = document.querySelector('.nav-contact');
+
 
 
 navAbout.addEventListener('click',function(){
+    mainNav.animate([
+        { top: '0px' }, 
+        { top: '-100px' }
+      ], {
+        duration: 0500,
+        fill: 'forwards'
+      });
 
+      for(var i = 0; i < burgerSpan.length; i++){
+        burgerSpan[i].style.backgroundColor = "#EDF5E1";
+      }
+      navBurger.classList.remove("open");
     smoothScroll('.about',1000);
 });
 
 navMenu.addEventListener('click',function(){
+    mainNav.animate([
+        { top: '0px' }, 
+        { top: '-100px' }
+      ], {
+        duration: 0500,
+        fill: 'forwards'
+      });
 
+      for(var i = 0; i < burgerSpan.length; i++){
+        burgerSpan[i].style.backgroundColor = "#EDF5E1";
+      }
+
+      navBurger.classList.remove("open");
     smoothScroll('.about-coffee',1000);
 });
+
+navContact.addEventListener('click', function(){
+    mainNav.animate([
+        { top: '0px' }, 
+        { top: '-100px' }
+      ], {
+        duration: 0500,
+        fill: 'forwards'
+      });
+
+      for(var i = 0; i < burgerSpan.length; i++){
+        burgerSpan[i].style.backgroundColor = "#EDF5E1";
+      }
+
+      navBurger.classList.remove("open");
+});
+
 
 // JQUERY  for arrow and buttons           
 

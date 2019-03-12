@@ -12,9 +12,9 @@
     #main-nav{
         display: none; 
        background: rgba(255,255,255,0.9);
-        height:80px;
+        height:70px;
         width:100%;
-        padding:0;
+        /*padding:0; */
         left:0;
         position: absolute;
         text-align: center;
@@ -28,7 +28,7 @@
     
     #main-nav li a{
        color:#222;
-        
+       
     }
     
    #main-nav li a:hover{

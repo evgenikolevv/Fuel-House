@@ -1,3 +1,9 @@
+//loading animation
+//$('.loader').fadeOut(800);
+
+$(document).ready(function() {
+  $('.loader-bg').delay(500).fadeOut();
+
 
 //Navigation Burger
 const navBurger = document.getElementById('burger-container');
@@ -272,5 +278,4 @@ window.addEventListener('scroll', function(){
    }
  },{once: true});
 
-
-
+}); 

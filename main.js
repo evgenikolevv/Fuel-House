@@ -1,9 +1,26 @@
+//refresh  page to the top
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 //loading animation
-//$('.loader').fadeOut(800);
+//fix loader 
 
 $(document).ready(function() {
-  $('.loader-bg').delay(500).fadeOut();
-
+  $(window).on("load", function() {
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {
+  var preloader = $('.loader-bg');
+  preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  
+  });
+  });
+/*
+$(function() {
+  $(".loader-bg").fadeOut(1000)
+       
+  });*/
 
 //Navigation Burger
 const navBurger = document.getElementById('burger-container');
@@ -278,4 +295,3 @@ window.addEventListener('scroll', function(){
    }
  },{once: true});
 
-}); 

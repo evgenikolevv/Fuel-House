@@ -45,9 +45,13 @@
   }
 
   
-
-
-
+/* remove in Internet Explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  
+  .loader-bg{
+    display: none;
+  }
+}
 
   @keyframes ellipsis1 {
     0% {

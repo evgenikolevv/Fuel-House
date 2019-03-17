@@ -521,15 +521,13 @@
 
 @media screen and (max-width:370px){
     
-  
-    
     .header h1{
         transform: translateY(-70%);
         font-size:35px;
     }
     
     .about-store{
-        height:3150px ;
+        height:2950px ;
     }
     
     .about-store h1{
@@ -537,5 +535,17 @@
         transform: translateY(420%);
     }
 
+}
+
+@media screen and (max-width:354px){
+    .about-store{
+        height:3050px ;
+    }
+}
+
+@media screen and (max-width:320px){
+    .about-store{
+        height:3100px ;
+    }
 }
 

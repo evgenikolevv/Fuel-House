@@ -255,7 +255,7 @@
         font-size:36px;
     }
 }
-/*****************************FIX FIX FIX FIX FIX FIX FIX FIX PLS PLS SNIMKITE ***************/
+
 @media screen and (max-width:500px){
 
    
@@ -298,7 +298,7 @@
         margin-bottom:35px;
     }
     .about-store{
-        height:3150px;
+        height:3250px;
     }
 
     .about-store h1{
@@ -329,28 +329,29 @@
         word-break: break-all;
     }
     .aboutpic-1{
-        background:url("./images-phone/aboutpic-1.png")no-repeat;
+        background:url("./images-small-tab/aboutpic-1.png")no-repeat;
         background-size: cover;
         width:100%;
         max-width:100%;
-        height:424px;
+        height:509px;
+        margin:0;
     }
 
 
     .aboutpic-2{
-        background:url("./images-phone/aboutpic-2.png")no-repeat;
+        background:url("./images-small-tab/aboutpic-2.png")no-repeat;
         background-size: cover;
         width:100%;
         max-width:100%;
-        height:424px;
+        height:509px;
     }
 
     .aboutpic-3{
-        background:url("./images-phone/aboutpic-3.png")no-repeat;
+        background:url("./images-small-tab/aboutpic-3.png")no-repeat;
         background-size: cover;
         width:100%;
         max-width:100%;
-        height:424px;
+        height:509px;
     }
 
     .contain-coffee img {
@@ -362,6 +363,45 @@
 
 }
 /****************    Phones       ***************/
+
+/******* Iphone + *****/
+@media screen and (max-width:414px){
+    .about-store{
+        height:2900px;
+        
+    }
+
+    .aboutpic-1{
+        background:url("./images-phone-plus/aboutpic-1.png")no-repeat;
+        background-size: cover;
+        width:414px;
+        max-width:100%;
+        height:324px;
+    }
+
+    .aboutpic-2{
+        background:url("./images-phone-plus/aboutpic-2.png")no-repeat;
+        background-size: cover;
+        width:414px;
+        max-width:100%;
+        height:324px;
+        
+    }
+
+    .aboutpic-3{
+        background:url("./images-phone-plus/aboutpic-3.png")no-repeat;
+        background-size: cover;
+        width:100%;
+        max-width:100%;
+        height:324px;
+    }
+
+    
+
+   
+
+  
+}
 @media screen and (max-width:387px){
 
     .logo{
@@ -401,6 +441,9 @@
 
 @media screen and (max-width:375px){
     
+    .about-store{
+        height:3050px ;
+    }
     .card-style{
         margin:50px auto 50px auto;
     }
@@ -441,6 +484,36 @@
         margin: 50px auto 50px auto;
         word-break: break-all;
     }
+
+    .aboutpic-1{
+        background:url("./images-phone/aboutpic-1.png")no-repeat;
+        background-size: cover;
+        width:414px;
+        max-width:100%;
+        height:324px;
+    }
+
+    .aboutpic-2{
+        background:url("./images-phone/aboutpic-2.png")no-repeat;
+        background-size: cover;
+        width:414px;
+        max-width:100%;
+        height:324px;
+    }
+
+    .aboutpic-3{
+        background:url("./images-phone/aboutpic-3.png")no-repeat;
+        background-size: cover;
+        width:414px;
+        max-width:100%;
+        height:324px;
+    }
+
+    .contain-coffee img {
+        height:40vh;
+        width:100vw;
+        margin:100px 0 30px 0;
+    }
     
    
  
@@ -456,7 +529,7 @@
     }
     
     .about-store{
-        height:3350px ;
+        height:3150px ;
     }
     
     .about-store h1{
@@ -464,9 +537,5 @@
         transform: translateY(420%);
     }
 
-
-    
-
-  
-
 }
+

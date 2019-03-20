@@ -2,8 +2,7 @@
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
-//loading animation
-//fix loader 
+//loading animation 
 
 $(document).ready(function() {
   $(window).on("load", function() {
@@ -16,11 +15,7 @@ $(document).ready(function() {
   
   });
   });
-/*
-$(function() {
-  $(".loader-bg").fadeOut(1000)
-       
-  });*/
+
 
 //Navigation Burger
 const navBurger = document.getElementById('burger-container');

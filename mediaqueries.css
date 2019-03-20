@@ -157,12 +157,7 @@
 }
 
 /* small tab */
-@media screen and (max-width:735px){
 
-    .about-store h1{
-       font-size:40px;
-    }
-}
 
 @media screen and (max-width:644px){
     
@@ -189,7 +184,6 @@
         height:400px;
     }
     .about-store h1{
-       font-size:36px;
        transform: translateY(200%); 
     }
 
@@ -237,6 +231,13 @@
     #burger-container{
         right:28px;
         top:30px;
+    }
+
+    .header{
+        background:url('./images-phone/landing.png') no-repeat;
+        height:550px;
+        width:100%;
+        background-size:cover;
     }
 
     .about{
@@ -302,8 +303,7 @@
     }
 
     .about-store h1{
-        font-size:24px;
-        transform: translateY(330%);
+        transform: translateY(280%);
     }
     .contain-store{
         width:auto;
@@ -421,11 +421,6 @@
    .card-style{
        margin:50px auto 50px auto;
    }
-
-    .about-store h1{
-        font-size:22px;
-    }
-
    
     .contain-store p {
         width:80%;
@@ -440,7 +435,12 @@
 }
 
 @media screen and (max-width:375px){
-    
+       .header{
+        background:url('./images-phone/landing375.png') no-repeat;
+        height:550px;
+        width:100%;
+        background-size:cover;
+    }
     .about-store{
         height:3050px ;
     }
@@ -530,10 +530,7 @@
         height:2950px ;
     }
     
-    .about-store h1{
-        font-size:18px;
-        transform: translateY(420%);
-    }
+ 
 
 }
 

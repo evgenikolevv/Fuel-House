@@ -2,8 +2,8 @@
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
-//loading animation 
-
+//loading animation  - it has bugs
+/*
 $(document).ready(function() {
   $(window).on("load", function() {
   preloaderFadeOutTime = 500;
@@ -14,6 +14,14 @@ $(document).ready(function() {
   hidePreloader();
   
   });
+  });*/
+  // test a new loading animation
+  $(function(){
+    setTimeout(function(){
+  $('.loader-bg').fadeOut('slow', function(){
+    $(this).remove();
+});
+    }, 1000);
   });
 
 

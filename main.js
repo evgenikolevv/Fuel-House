@@ -2,24 +2,12 @@
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
-//loading animation  - it has bugs
-/*
-$(document).ready(function() {
-  $(window).on("load", function() {
-  preloaderFadeOutTime = 500;
-  function hidePreloader() {
-  var preloader = $('.loader-bg');
-  preloader.fadeOut(preloaderFadeOutTime);
-  }
-  hidePreloader();
-  
-  });
-  });*/
-  // test a new loading animation
+
+  // loading animation
   $(function(){
-    setTimeout(function(){
+  setTimeout(function(){
   $('.loader-bg').fadeOut('slow', function(){
-    $(this).remove();
+   $(this).remove();
 });
     }, 1000);
   });

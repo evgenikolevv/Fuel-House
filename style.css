@@ -377,6 +377,7 @@ body{
     display: grid;
     display: -ms-grid;
     justify-items: center;
+    
     text-align: center;
 }
 

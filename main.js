@@ -49,19 +49,46 @@ var burgerSpan = document.querySelectorAll('.bg-span');
 
 
 // jQuery scroll animations 
-
+// OPRAVI SI ANIMACIQTA WE
 $('.nav-about').click(function(e){
   e.preventDefault();
   $('html, body').animate({
       scrollTop: $('.about').offset().top
   }, 700);
+
+        mainNav.animate([
+            { top: '0px' }, 
+            { top: '-100px' }
+          ], {
+            duration: 0500,
+            fill: 'forwards'
+          });
+        for(var i = 0; i < burgerSpan.length; i++){
+            burgerSpan[i].style.backgroundColor = "#EDF5E1";
+        }
+        navBurger.classList.toggle('open');
+  
+ 
 });
+
 
 $('.nav-menu').click(function(e){
   e.preventDefault();
   $('html, body').animate({
       scrollTop: $('.about-coffee').offset().top
   }, 700);
+
+  mainNav.animate([
+    { top: '0px' }, 
+    { top: '-100px' }
+  ], {
+    duration: 0500,
+    fill: 'forwards'
+  });
+for(var i = 0; i < burgerSpan.length; i++){
+    burgerSpan[i].style.backgroundColor = "#EDF5E1";
+}
+navBurger.classList.toggle('open');
 });
 
 // jQuery  for arrow and buttons           
@@ -205,4 +232,5 @@ window.addEventListener('scroll', function(){
   
    }
  },{once: true});
+
 
